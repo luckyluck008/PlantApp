@@ -1,0 +1,27 @@
+{
+  "name": "PlantApp Laravel Backend",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "ms-azuretools.vscode-docker",
+        "mikestead.dotenv"
+      ],
+      "settings": {
+        "php.validate.executablePath": "/usr/local/bin/php"
+      }
+    }
+  },
+
+  "forwardPorts": [8000, 8081, 19000, 19001, 19002],
+
+  "postCreateCommand": "bash .devcontainer/setup-laravel.sh",
+
+  "remoteUser": "root"
+}
+
