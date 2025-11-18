@@ -4,17 +4,30 @@ Laravel Backend + Expo React Native (NativeWind)
 
 ## Start
 
-**VS Code:** `F1` → "Dev Containers: Reopen in Container"  
-**PhpStorm:** `dev.bat up` dann `dev.bat start` oder `start.bat`
-
-Laravel + Expo + NativeWind wird automatisch installiert.
-
-## Server
-
-**Beide gleichzeitig:**
-```bash
-dev start  # oder: start.bat
+**1. Container starten:**
+```cmd
+dev up
 ```
+
+**2. Beide Server starten:**
+```cmd
+dev start
+```
+oder direkt:
+```cmd
+start
+```
+
+## Befehle
+
+```cmd
+dev up       # Container starten
+dev down     # Container stoppen
+dev shell    # Terminal öffnen
+dev start    # Backend + Frontend starten
+```
+
+## Im Container (nach `dev shell`)
 
 **Backend:**
 ```bash
@@ -28,7 +41,7 @@ cd frontend
 npm start  # QR-Code mit Expo Go scannen
 ```
 
-## Laravel Befehle
+## Laravel
 
 ```bash
 php artisan make:model Plant -m
@@ -64,7 +77,7 @@ frontend/    # Expo (App.js, src/)
 **Team:**
 ```bash
 git clone <repo>
-dev.bat up  # Installiert alles automatisch
+dev up  # Installiert alles automatisch
 ```
 
 ## Ports
