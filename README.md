@@ -9,22 +9,33 @@ Laravel Backend + Expo React Native (NativeWind)
 dev up
 ```
 
-**2. Beide Server starten:**
+**2. Dependencies installieren (nur einmal beim ersten Start):**
 ```cmd
-dev start
+install-backend
+install-frontend
 ```
-oder direkt:
+
+**3. Server starten:**
 ```cmd
-start
+run-backend    # Terminal 1
+run-frontend   # Terminal 2
 ```
+
+Oder beide gleichzeitig: `dev start`
 
 ## Befehle
 
 ```cmd
-dev up       # Container starten
-dev down     # Container stoppen
-dev shell    # Terminal öffnen
-dev start    # Backend + Frontend starten
+dev up               # Container starten
+dev down             # Container stoppen
+dev shell            # Terminal öffnen
+dev start            # Backend + Frontend starten
+
+install-backend      # Laravel installieren
+install-frontend     # Expo installieren
+
+run-backend          # Nur Backend starten
+run-frontend         # Nur Frontend starten
 ```
 
 ## Im Container (nach `dev shell`)

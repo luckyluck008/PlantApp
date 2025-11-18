@@ -1,5 +1,4 @@
 # Docker Compose für lokale Entwicklung (ohne DevContainer)
-version: '3.8'
 
 services:
   php:
