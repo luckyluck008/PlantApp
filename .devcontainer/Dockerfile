@@ -1,6 +1,6 @@
 FROM php:8.2-fpm
 
-# Install system dependencies
+# Install system dependencies (nur für Laravel/PHP)
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -10,8 +10,6 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     zip \
     unzip \
-    nodejs \
-    npm \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install PHP extensions

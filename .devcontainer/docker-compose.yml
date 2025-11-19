@@ -5,14 +5,10 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ..:/workspace:cached
+      - ../backend:/workspace/backend:cached
     command: sleep infinity
     ports:
       - "8000:8000"
-      - "8081:8081"
-      - "19000:19000"
-      - "19001:19001"
-      - "19002:19002"
     networks:
       - plantapp
 
