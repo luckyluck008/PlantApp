@@ -685,6 +685,20 @@ plantapp up
 plantapp install-backend
 ```
 
+### Problem: ".env file not found" beim Backend
+
+**Lösung:**
+```cmd
+# .env manuell erstellen
+plantapp shell
+cd backend
+cp .env.example .env
+php artisan key:generate
+exit
+```
+
+**Hinweis:** Ab jetzt wird die `.env`-Datei automatisch bei `plantapp install` erstellt!
+
 ### Problem: Frontend startet nicht
 
 **Lösung:**
